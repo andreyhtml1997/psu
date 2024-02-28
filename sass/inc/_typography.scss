@@ -1,0 +1,162 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, .h1 {
+  font-size: 74px;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+  @media(max-width: $xl){
+    font-size: 58px;
+    letter-spacing: -0.1rem;
+  }
+  @media(max-width: $lg){
+    font-size: 50px;
+  }
+  @media(max-width: $md){
+    font-size: 44px;
+  }
+  @media(max-width: $sm){
+    font-size: 30px;
+  }
+  @media(max-width: $xs){
+  
+  }
+  
+}
+
+h2, .h2 {
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.15rem;
+  @media(max-width: $xl){
+    font-size: 50px;
+  }
+  @media(max-width: $lg){
+    font-size: 44px;
+  }
+  @media(max-width: $md){
+    font-size: 36px;
+  }
+  @media(max-width: $sm){
+    font-size: 28px;
+  }
+  @media(max-width: $xs){
+  
+  }
+  
+}
+
+h3, .h3 {
+  font-size: 56px;
+  line-height: 1.25;  
+  @media(max-width: $lg){
+    font-size: 46px;
+  }
+  @media(max-width: $lg){
+    font-size: 36px;
+  }
+  @media(max-width: $md){
+    font-size: 32px;
+  }
+  @media(max-width: $sm){
+    font-size: 28px;
+  }
+  
+}
+
+h4, .h4 {
+  font-size: 36px;
+  line-height: 1;
+  line-height: 1;
+  @media(max-width: $md){
+    font-size: 20px;
+  }
+  @media(max-width: $sm){
+    font-size: 20px;
+  
+  }
+}
+
+h5, .h5 {
+  font-size: 28px;
+  line-height: 1.25;
+  @media(max-width: $xl){
+  
+  }
+  @media(max-width: $lg){
+  
+  }
+  @media(max-width: $md){
+    font-size: 24px;
+  }
+  @media(max-width: $sm){
+    font-size: 20px;
+  
+  }
+  @media(max-width: $xs){
+  }
+  
+}
+
+h6, .h6 {
+  font-size: 20px;
+}
+
+p {
+ 
+  
+}
+.fw-100 {
+  font-weight: 100 !important;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+
+
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+
+
+a {
+  color: $green-dark;
+  transition: color 0.25s;
+  &:hover {
+    color: $green;
+  }
+}

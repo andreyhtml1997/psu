@@ -1,0 +1,387 @@
+.contacts {
+  .footer__map {
+    margin-top: 0;
+    height: calc(100% - 10px);
+    &-info {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        box-shadow: $box-shadow-small;
+      border-radius: 20px;
+      background-color: $light;
+      padding: 20px;
+      max-width: 100%;
+      margin-top: 0.75rem;
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &-title {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        color: $text;
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+  &__info {
+    .row {
+      & > * {
+        margin-bottom: 15px;
+      }
+    }
+    &--socials {
+      margin-bottom: 45px;
+      .row {
+        margin-left: -5px;
+        margin-right: -5px;
+        & > * {
+          margin-bottom: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  &__info-title {
+    padding-left: 24px;
+    color: $secondary;
+    margin-bottom: 10px;
+    &::before {
+      display: none !important;
+    }
+  }
+  &__info-body {
+
+  }
+  &__info-el {
+    background-color: $light;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    height: 100%;
+    box-shadow: $box-shadow-small;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      border-radius: 10px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &--social {
+      transition: all 0.25s;
+      height: 168px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+        height: 80px;
+        padding: 0px;
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        svg {
+          max-width: 28px;
+          max-height: 28px;
+        }
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      svg {
+        margin: auto;
+        transition: all 0.25s;
+        path {
+          transition: all 0.25s;
+        }
+      }
+      &:hover {
+        background-color: $green;
+        svg {
+          path {
+            fill: $light;
+          }
+        }
+        &.yt {
+          svg {
+            path {
+              
+              &:last-of-type {
+                fill: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__info-el-text {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__info-el-title {
+    margin-bottom: 10px;
+    color: $secondary;
+  }
+  &__info-el-value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  &__connection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $green;
+    border-radius: 25px;
+    overflow: hidden;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      border-radius: 18px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__connection-text {
+    font-size: 44px;
+    padding: 30px;
+    height: 43%;
+    line-height: 1.1;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      font-size: 26px;
+      height: auto;
+      padding: 20px;
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    p {
+
+    }
+  }
+  &__connection-img-container {
+    overflow: hidden;
+    height: 57%;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      height: 100%;
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__connection-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.contact-form {
+  height: 100%;
+  padding: 30px 25px;
+  background-color: $light;
+  border-radius: 25px;
+  font-size: 18px;
+  box-shadow: $box-shadow-small;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media(max-width: $xl){
+    
+  }
+  @media(max-width: $lg){
+  
+  }
+  @media(max-width: $md){
+    
+  }
+  @media(max-width: $sm){
+  
+  }
+  @media(max-width: $xs){
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+  
+  [type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input, textarea, select {
+      background-color: $bg-light;
+      border-radius: 12px;
+      height: 54px;
+      margin-bottom: 12px;
+      padding: 0 15px;
+      width: 100%;
+      transition: 0.25s all;
+      border: 1px solid $bg-light;
+      &::placeholder {
+        color: $secondary;
+      }
+      &:focus {
+        border-color: $green;
+      }
+    }
+    input {
+      
+      &[type="text"] {
+
+      }
+      &[type="email"] {
+        max-width: calc(100%/12 * 7 - 12px);
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+        
+        }
+        @media(max-width: $xs){
+          max-width: 100%;
+        }
+        
+      }
+      &[type="tel"] {
+        max-width: calc(100%/12 * 5);
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+        
+        }
+        @media(max-width: $xs){
+          max-width: 100%;
+        }
+        
+
+      }
+      &[type="checkbox"] {
+        display: none;
+      }
+    }
+    textarea {
+      height: auto;
+      min-height: 120px;
+      max-height: 200px;
+      resize: vertical;
+      padding: 15px;
+    }
+  }
+}
+
+.checkbox {
+  font-weight: 400;
+  color: $secondary;
+  display: flex;
+  font-size: 14px;
+  
+  &__box-container {
+    margin-right: 10px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  &__box {
+    width: 17px;
+    height: 17px;
+    border: 2px solid $secondary;
+    display: flex;
+  }
+  &__text {
+    a {
+      border-bottom: 1px solid;
+    }
+  }
+  input {
+    &:checked {
+      & + .checkbox__box {
+        background: url(../img/icons/check-grey.svg) center no-repeat;
+      }
+    }
+  }
+}

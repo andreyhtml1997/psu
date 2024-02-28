@@ -1,0 +1,1129 @@
+.equipment-catalog {
+  .section__body {
+    min-height: 960px;
+    display: flex;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      min-height: 0px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    & > .row {
+      width: calc(100% + 2rem);
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        width: calc(100% + 3rem);
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      & > * {
+        flex: auto;
+        height: 100%;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+          width: 100% !important;
+          height: auto;
+          
+        }
+        @media(max-width: $xs){
+        
+        }
+        
+        &:nth-of-type(1) {
+          width: 62.8%;
+        }
+        &:nth-of-type(2) {
+          width: 37.2%;
+        }
+      }
+    }
+  }
+  .equipment {
+    
+    &__els {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        height: auto;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      &--two {
+        .equipment__el {
+          min-height: 444px;
+        }
+      }
+      &--three {
+        .equipment__el {
+          min-height: 279px;
+        }
+      }
+    }
+    &__el {
+      height: auto;
+      background-color: $light !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        min-height: 0 !important;
+        height: auto !important;
+        margin-bottom: 0;
+        border-radius: 0;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        border-bottom: 1px solid #D2D2D2;
+        
+        
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      .accordion-collapse {
+        @media(min-width: $xl){
+        
+        }
+        @media(min-width: $lg){
+        
+        }
+        @media(min-width: $md){
+        
+        }
+        @media(min-width: $sm){
+          display: block;
+        }
+        @media(min-width: $xs){
+        
+        }
+        
+      }
+    }
+    &__el-img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom right;
+      max-width: 55%;
+      margin-right: 0;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: none;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &__el-title {
+      position: relative;
+      top: auto;
+      left: auto;
+      z-index: 1;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #D2D2D2;
+        margin-bottom: -1px;
+        font-size: 18px !important;
+        
+        br {
+          display: none;
+        }
+      }
+      @media(max-width: $xs){
+        max-width: 100%;
+        width: 100%;
+      }
+      
+    }
+    &__el-title-value {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        width: 100%;
+        padding: 17px 0.75rem;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &__el-title-toggle {
+      flex-shrink: 0;
+      display: none;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: flex;
+        padding: 17px 0.75rem;
+        align-items: center;
+        &::before {
+          line-height: 0;
+          line-height: 0;
+          font-size: 50px;
+          border-top: none;
+          border-left: none;
+          font-weight: 200;
+          content: '+';
+          display: flex;
+          transition: 0.25s all;
+        }
+        &[aria-expanded="true"] {
+          &::before {
+            border-color: $text;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &__el-subcategories {
+      position: relative;
+      z-index: 1;
+      max-width: 65%;
+      
+      font-size: 17px;
+      width: 100%;
+      padding: 0 30px 30px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        padding: 12px 0.75rem 12px;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      a {
+        display: block;
+        margin-top: 10px;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+          margin: 0;
+          padding: 9px 1rem 9px 0.75rem;
+          display: flex;
+          &::after {
+            width: 14px;
+            height: 14px;
+            transform: rotate(-45deg);
+            border: 2px solid #9ea8a3;
+            border-top: none;
+            border-left: none;
+            content: "";
+            display: flex;
+            -webkit-transition: .25s all;
+            transition: .25s all;
+            margin-right: 0;
+            margin-left: auto;
+          }
+        }
+        @media(max-width: $xs){
+        
+        }
+        
+      }
+      .row {
+        & > * {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .container {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      // padding-left: 0;
+      // padding-right: 0;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  .row {
+
+  }
+}
+
+.med-direction {
+  &--list-part {
+    .row {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        
+      }
+      @media(max-width: $xs){
+        
+      }
+      
+      & > * {
+        margin-bottom: 1.5rem;
+        
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+          margin-bottom: 0 !important;
+          
+        }
+        @media(max-width: $xs){
+          margin-bottom: 0 !important;
+        }
+        
+      }
+    }
+    .med-direction {
+    &__el {
+      background: $light;
+      display: block;
+      height: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        margin-left: -0.75rem;
+        
+        margin-right: -0.75rem;
+        border-bottom: 1px solid #D2D2D2;
+          border-radius: 0;
+          background-color: transparent;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      &:hover {
+        .med-direction__el-img {
+          transform: scale(1.2);
+        }
+      }
+    }
+    &__el-img-container {
+      height: 226px;
+      display: flex;
+      overflow: hidden;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+          display: none;
+        }
+        @media(max-width: $xs){
+        
+        }
+        
+    }
+    &__el-img {
+      transition: all 0.25s;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__el-title {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        padding: 17px 0.75rem;
+        min-height: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &::before {
+          width: 14px;
+          height: 14px;
+          transform: rotate(-45deg);
+          border: 2px solid #9EA8A3;
+          border-top: none;
+          border-left: none;
+          content: '';
+          display: flex;
+          transition: 0.25s all;
+          margin-right: 0;
+          margin-left: auto;
+        }
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+  }
+}
+
+.med-direction {
+  .row {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    & > * {
+      margin-bottom: 1.5rem;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        
+      }
+      @media(max-width: $xs){
+        
+        margin-bottom: 0.75rem;
+      }
+      
+    }
+  }
+  &__el {
+    background: $light;
+    display: block;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &:hover {
+      .med-direction__el-img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__el-img-container {
+    height: 226px;
+    display: flex;
+    overflow: hidden;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        
+      }
+      @media(max-width: $xs){
+        height: 170px;
+      }
+      
+  }
+  &__el-img {
+    transition: all 0.25s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  &__el-title {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      padding: 13px 15px;
+      min-height: 0;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+}
+
+.catalog {
+  .section__header {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      padding-left: 0;
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__mobile-nav {
+    font-size: 15px;
+    position: fixed;
+    bottom: 62px;
+    left: 8px;
+    right: 8px;
+    display: none;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 2;
+    min-height: 56px;
+    
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      display: flex;
+      
+      
+    }
+    @media(max-width: $xs){
+    
+    }
+    & > * {
+      width: 50%;
+      background-color: #00D78A;
+      border-right: 1px solid $light;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.catalog-filter-container {
+  .inner-wrapper-sticky {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      transform: none !important;
+      position: static !important;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+}
+.catalog-filter {
+  .section__header {
+    margin-bottom: 20px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      padding-left: 0;
+    }
+    @media(max-width: $sm){
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  .section__title {
+    font-size: 18px;
+    color: $secondary;
+    letter-spacing: normal;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      font-size: 20px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  .equipment-catalog {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      //margin-left: -0.75rem;
+      //margin-right: -0.75rem;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  .equipment {
+    &__el {
+      border-radius: 0;
+      @media(min-width: $xl){
+        
+      }
+      @media(min-width: $lg){
+        
+      }
+      @media(min-width: $md){
+        
+      }
+      @media(min-width: $sm){
+        background-color: transparent !important;
+        box-shadow: none;
+        
+      }
+      @media(min-width: $xs){
+      
+      }
+      
+    }
+    &__el-title {
+      br {
+        display: none;
+      }
+      @media(min-width: $xl){
+      
+      }
+      @media(min-width: $lg){
+      
+      }
+      @media(min-width: $md){
+      
+      }
+      @media(min-width: $sm){
+        padding: 0;
+        font-size: 20px;
+      }
+      @media(min-width: $xs){
+      
+      }
+      
+    }
+    &__el-subcategories {
+      width: 100%;
+      max-width: 100%;
+      @media(min-width: $xl){
+      
+      }
+      @media(min-width: $lg){
+      
+      }
+      @media(min-width: $md){
+      
+      }
+      @media(min-width: $sm){
+        padding: 0;
+      }
+      @media(min-width: $xs){
+      
+      }
+      a {
+        &.active {
+          display: flex;
+          color: $green;
+          &::after {
+            @media(min-width: $sm){
+              content: '';
+              width: 20px;
+              height: 20px;
+              transform: rotate(45deg);
+              background: url(../img/icons/times-red.svg) center no-repeat;
+              background-size: contain;
+              display: flex;
+              flex-shrink: 0;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  .med-direction {
+    &--list-part {
+
+    }
+    &__el {
+      border-radius: 0;
+      background: transparent;
+      margin-bottom: 10px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        margin-left: 0;
+        margin-right: 0;
+        padding: 17px 0.75rem;
+        margin-bottom: 0;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      &.active {
+        display: flex;
+        color: $green;
+        &::after {
+          @media(min-width: $sm){
+            content: '';
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            background: url(../img/icons/times-red.svg) center no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-shrink: 0;
+            margin-left: 5px;
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+    &__el-title {
+      padding: 0;
+      min-height: 0;
+    }
+  }
+
+  .modal {
+    @media(min-width: $xl){
+    
+    }
+    @media(min-width: $lg){
+    
+    }
+    @media(min-width: $md){
+    
+    }
+    @media(min-width: $sm){
+      opacity: 1 !important;
+      display: block !important;
+      position: static !important;
+      height: auto !important;
+    }
+    @media(min-width: $xs){
+    
+    }
+    &-dialog {
+      transform: none !important;
+      margin-bottom: 0;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        margin: 0;
+        min-height: 100%;
+        display: flex;
+        
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &-content {
+      @media(min-width: $xl){
+      
+      }
+      @media(min-width: $lg){
+      
+      }
+      @media(min-width: $md){
+      
+      }
+      @media(min-width: $sm){
+        border: none;
+        background: transparent;
+      }
+      @media(min-width: $xs){
+      
+      }
+
+
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        border-radius: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0px;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &__footer-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      margin-top: 30px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: flex;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      & > * {
+        height: 55px;
+        min-width: 120px;
+        border-radius: 55px;
+        background-color: #E7E7E7;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+.catalog-page {
+  .footer, & + .footer {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      padding-bottom: 50px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+}
+
+
+
+.our-features {
+  
+  &--small {
+    .our-features {
+      &__el {
+        position: relative;
+        overflow: hidden;
+        padding: 25px;
+        min-height: 400px;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+          min-height: 320px;
+          padding: 15px;
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+        
+        }
+        @media(max-width: $xs){
+          margin-bottom: 10px;
+        }
+        
+        &--light {
+          .our-features {
+            &__el-title {
+              color: $light;
+            }
+          }
+        }
+      }
+      &__el-header {
+        position: relative;
+      }
+      &__el-number {
+
+      }
+      &__el-title {
+        font-size: 22px;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+          font-size: 20px;
+        }
+        @media(max-width: $md){
+          
+        }
+        @media(max-width: $sm){
+        
+        }
+        @media(max-width: $xs){
+        
+        }
+        
+      }
+      &__el-bg-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

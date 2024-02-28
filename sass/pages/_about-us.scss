@@ -1,0 +1,1274 @@
+.years {
+  .section {
+
+  }
+  &__carousel {
+    display: flex;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+    }
+    @media(max-width: $sm){
+      flex-direction: column;
+      
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__carousel-el {
+    flex-shrink: 0;
+    width: 45%;
+    padding-right: 20px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      width: 100%;
+      position: relative;
+      margin-bottom: 17px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    .position-container {
+      height: 490px;
+      display: flex;
+      align-items: flex-end;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        height: auto;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &.active {
+      width: 65%;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        width: 100%;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      .years {
+        &__carousel-el-img-container {
+          border-radius: 25px;
+          height: 100%;
+          @media(max-width: $xl){
+          
+          }
+          @media(max-width: $lg){
+          
+          }
+          @media(max-width: $md){
+            
+          }
+          @media(max-width: $sm){
+            height: 350px;
+            border-radius: 12px;
+          }
+          @media(max-width: $xs){
+            height: 200px;
+          }
+          
+          &:after {
+            opacity: 0;
+          }
+        }
+        &__carousel-el-img {
+      
+        }
+        &__carousel-el-progress {
+          &::before {
+            background-color: $green;
+          }
+          &::after {
+            position: absolute;
+            left: -1000px;
+            right: 100%;
+            height: 1px;
+            background-color: $green-dark;
+            content: '';
+            top: 0;
+            bottom: 0;
+            @media(max-width: $xl){
+            
+            }
+            @media(max-width: $lg){
+            
+            }
+            @media(max-width: $md){
+              
+            }
+            @media(max-width: $sm){
+              display: none;
+            }
+            @media(max-width: $xs){
+            
+            }
+            
+          }
+        }
+        &__carousel-el-progress-active {
+          @media(max-width: $xl){
+          
+          }
+          @media(max-width: $lg){
+          
+          }
+          @media(max-width: $md){
+            
+          }
+          @media(max-width: $sm){
+            width: 100%;
+            height: 100%;
+          }
+          @media(max-width: $xs){
+          
+          }
+          
+        }
+        &__carousel-el-year {
+          color: $green;
+          
+        }
+        &__carousel-el-text {
+          color: $text;
+        }
+      }
+    }
+  }
+  &__carousel-el-img-container {
+    border-radius: 12px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      z-index: 1;
+      margin-bottom: 18px;
+    }
+    @media(max-width: $xs){
+      height: 200px;
+    }
+    
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparentize(#000, 0.3);
+      transition: 0.25s all;
+      opacity: 1;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: none;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+
+  }
+  &__carousel-el-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__carousel-el-progress {
+    background-color: #C0C0C0;
+    height: 1px;
+    display: flex;
+    position: relative;
+    margin-top: 67px;
+    margin-bottom: 45px;
+    margin-right: -20px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      width: 2px;
+      height: auto;
+      top: 370px;
+      bottom: 0;
+      right: auto;
+      left: 28px;
+      position: absolute;
+      margin: auto;
+    }
+    @media(max-width: $xs){
+      top: 220px;
+    }
+    
+    &::before {
+      height: 22px;
+      width: 22px;
+      border-radius: 22px;
+      background-color: #B1B1B1;
+      content: '';
+      bottom: -10px;
+      display: flex;
+      position: absolute;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: none;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+  &__carousel-el-progress-active {
+    background-color: $green-dark;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      background: $green;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__carousel-el-year {
+    font-size: 40px;
+    color: #C6C6C6;
+    margin-bottom: 23px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      font-size: 18px;
+      margin-bottom: 5px;
+      padding-left: 50px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__carousel-el-text {
+    color: #B9B9B9;
+    max-width: 441px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      padding-bottom: 20px;
+      min-height: 160px;
+      padding-left: 50px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+}
+.possibilities {
+  counter-reset: possibilities;
+  &__list {
+
+  }
+  &__list-el {
+    margin-bottom: 40px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &::before {
+      counter-increment: possibilities; /* Increment the value of section counter by 1 */
+      content: "0"counter(possibilities) ". ";
+      border-bottom: 1px solid #C8C8C8;
+      width: 100%;
+      display: block;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+      
+      }
+      @media(max-width: $md){
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+  &__list-el-content {
+
+  }
+  &__list-el-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__list-el-text {
+    color: $secondary;
+  }
+  .swiper {
+    overflow: visible;
+    &-wrapper {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+        flex-wrap: nowrap;
+      }
+      
+      @media(min-width: $xl){
+      
+      }
+      @media(min-width: $lg){
+      
+      }
+      @media(min-width: $md){
+      
+      }
+      @media(min-width: $sm){
+      
+      }
+      @media(min-width: $xs){
+        width: calc(100% + 2rem);
+      
+      }
+      
+    }
+    &-slide {
+     
+      @media(min-width: $xl){
+      
+      }
+      @media(min-width: $lg){
+      
+      }
+      @media(min-width: $md){
+        
+      }
+      @media(min-width: $sm){
+        width: 33.33% !important;
+      }
+      @media(min-width: $xs){
+        width: 50% !important;
+      }
+      
+    }
+  }
+}
+
+.feedbacks {
+
+  .section {
+    &__header {
+      max-width: 100%;
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+    &__title {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        font-size: 28px;
+        margin-right: 110px;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &__body {
+
+    }
+  }
+  &-swiper {
+
+  }
+  .swiper {
+    overflow: visible;
+    &__nav {
+      position: absolute;
+      top: -70px;
+      right: 0;
+      display: flex;
+    }
+    &__nav-el {
+      &--prev {
+        margin-right: 12px;
+      }
+      &--next {
+
+      }
+    }
+    &-wrapper {
+      
+    }
+    &-slide {
+      transition: all 0.6s;
+      opacity: 0.5;
+      &-active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.feedback {
+  position: relative;
+  padding-top: 40px;
+  @media(max-width: $xl){
+  
+  }
+  @media(max-width: $lg){
+  
+  }
+  @media(max-width: $md){
+    padding-top: 20px;
+  }
+  @media(max-width: $sm){
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: $light;
+    border-radius: 20px;
+    padding-top: 0;
+  }
+  @media(max-width: $xs){
+  
+  }
+  
+  &::before {
+    top: 0;
+    left: 0;
+    right: -70px;
+    content: '';
+    background-color: $text;
+    height: 1px;
+    position: absolute;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      display: none;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &--text-only {
+    .feedback {
+      &__body {
+        max-height: 300px;
+        overflow: hidden;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+          max-height: 229px;
+        }
+        @media(max-width: $md){
+          max-height: 187px;
+        }
+        @media(max-width: $sm){
+        
+        }
+        @media(max-width: $xs){
+        
+        }
+        
+        p {
+          display: flex;
+          display: -webkit-box; 
+          -webkit-box-orient: vertical; 
+          -webkit-line-clamp: 4; 
+          overflow: hidden; 
+          text-overflow: ellipsis; 
+        }
+      }
+    }
+  }
+  &__body {
+    position: relative;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      padding: 20px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    p {
+      font-size: 68px;
+      font-family: $secondaryFont;
+      font-weight: 400;
+      display: -webkit-box; 
+      -webkit-box-orient: vertical; 
+      -webkit-line-clamp: 4; 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+      line-height: 1.1;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+        font-size: 52px;
+      }
+      @media(max-width: $md){
+        font-size: 42px;
+      }
+      @media(max-width: $sm){
+        font-size: 32px;
+      }
+      @media(max-width: $xs){
+        font-size: 26px;
+      }
+      
+    }
+  }
+  &__show-more {
+    background-color: $bg-light;
+    font-family: $secondaryFont;
+    font-size: 68px;
+    color: $green;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    transition: 0.25s all;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+      font-size: 52px;
+      bottom: 0;
+      padding-bottom: 2px;
+    }
+    @media(max-width: $md){
+      font-size: 42px;
+    }
+    @media(max-width: $sm){
+      font-size: 32px;
+      padding-bottom: 0px;
+      padding-top: 0;
+      bottom: 20px;
+      right: 20px;
+      background-color: $light;
+    }
+    @media(max-width: $xs){
+      font-size: 26px;
+    }
+    
+
+    &::before {
+      content: ' ... ';
+      color: $text !important;
+      padding: 0 10px 0 20px;
+    }
+    &::after {
+      transition: 0.25s all;
+      width: 44px;
+      height: 44px;
+      border-radius: 100px;
+      background-color: $light;
+      content: '+';
+      font-weight: 300;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: $text;
+      flex-shrink: 0;
+      position: relative;
+      top: 8px;
+      margin-left: 10px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+        top: 3px;
+        background-color: $bg-light;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &:hover {
+      color: $green-dark;
+      &::after {
+        
+        background-color: $green;
+        color: $light;
+      }
+    }
+  }
+  &__footer {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      margin-top: 25px;
+    }
+    @media(max-width: $sm){
+      padding: 20px;
+      margin-top: 0;
+      border-bottom: 1px solid #E6E6E6;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      font-size: 15px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__author-img-container {
+    width: 79px;
+    height: 79px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 15px;
+    flex-shrink: 0;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      width: 60px;
+      height: 60px;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__author-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__author-title {
+  }
+  &__author-text {
+    color: $secondary;
+  }
+  &__video-button {
+    border-radius: 20px;
+    background: url(../img/feedback-video-button-bg.jpg) center no-repeat;
+    background-size: cover;
+    height: 90px;
+    display: flex;
+    max-width: 254px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      display: none;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &--mobile {
+      display: none;
+      width: 100%;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      max-width: calc(100% - 30px);
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: flex;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    & > * {
+      position: relative;
+    }
+    &::before  {
+      content: '';
+      background-color: $green;
+      opacity: 0;
+      transition: 0.25s all;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    svg {
+      margin-right: 15px;
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &__video-button-text {
+
+  }
+}
+
+
+
+
+.our-team {
+  &__list {
+    @media(min-width: $sm){
+      width: auto !important;
+    }
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      flex-wrap: nowrap;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__el {
+    margin-bottom: 35px;
+    @media(min-width: $sm){
+      width: calc(100%/3) !important;
+      margin-right: 0 !important;
+      
+    }
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      padding-right: 0;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &:hover {
+      .our-team__el-img-container {
+        box-shadow: $box-shadow;
+      }
+      .our-team__el-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__el-content {
+
+  }
+  &__el-img-container {
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    transition: 0.25s all;
+  }
+  &__el-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.25s all;
+  }
+  &__el-img-bg {
+    width: 100%;
+    height: auto;
+  }
+  &__el-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  &__el-text {
+    color: $secondary;
+  }
+}
+
+.our-partners {
+  &__list {
+    position: relative;
+    &::after {
+      left: -1000px;
+      right: -1000px;
+      height: 1px;
+      content: '';
+      background-color: #DBDBDB;
+      position: absolute;
+    }
+    &::after {
+      bottom: -1px;
+    }
+  }
+  &__el {
+    border: 1px solid #DBDBDB;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    position: relative;
+    transition: 0.25s all;
+    &:hover {
+      background: $light;
+      box-shadow: $box-shadow;
+      
+    }
+    &::before {
+      left: -1000px;
+      right: -1000px;
+      height: 1px;
+      content: '';
+      background-color: #DBDBDB;
+      position: absolute;
+      top: -1px;
+    }
+  }
+  &__el-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 20px 10px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      min-height: auto;
+      height: 150px;
+    }
+    @media(max-width: $xs){
+      height: 120px;
+      
+    }
+    
+  }
+  &__el-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.download-metarials {
+  &__title {
+    font-size: 22px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+      font-size: 16px;
+    }
+    
+  }
+  &__els {
+    display: flex;
+    flex-direction: column;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      position: static !important;
+      transform: none !important;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__els-container {
+    
+  }
+  &__list {
+
+  }
+  &__el {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 40px 40px 30px 40px;
+    border-radius: 25px;
+    background-color: $green-dark;
+    color: $light;
+    min-height: 247px;
+    box-shadow: $box-shadow;
+    position: relative;
+    overflow: hidden;
+    font-size: 26px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      border-radius: 15px;
+      min-height: 85px;
+      padding: 20px;
+      flex-direction: row;
+    }
+    @media(max-width: $xs){
+      //margin-bottom: 10px;
+      height: auto;
+    
+    }
+    
+    &::before {
+      left: -50px;
+      top: -50px;
+      background-color: $light;
+      content: '';
+      position: absolute;
+      border-radius: 1000px;
+      width: 0;
+      height: 0;
+      transition: 0.65s;
+    }
+    &::after {
+      content: '';
+      position: relative;
+      width: 46px;
+      height: 60px;
+      background: url(../img/icons/file-upload-green.svg) center no-repeat;
+      background-size: contain;
+      margin-right: 0;
+      margin-left: auto;
+      @media(max-width: $sm){
+        width: 28px;
+        height: 36px;
+        flex-shrink: 0;
+      }
+    }
+    p {
+      max-width: 345px;
+      
+      margin-bottom: 30px;
+      position: relative;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        font-size: 18px;
+        margin-bottom: 0px;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &:hover {
+      color: $text;
+      b {
+        color: $text;
+      }
+      &::before {
+        top: -250px;
+        width: 800px;
+        height: 800px;
+      }
+    }
+    &--small {
+      font-size: 20px;
+      padding: 25px;
+      height: auto;
+      min-height: auto;
+      margin-top: 20px;
+      //max-width: 299px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        font-size: 18px;
+      }
+      @media(max-width: $sm){
+        padding: 17px;
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      &::after {
+        width: 32px;
+        height: 42px;
+      }
+      p {
+        
+        
+      }
+    }
+  }
+}

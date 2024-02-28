@@ -1,0 +1,373 @@
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid $border-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $light;
+  z-index: 4;
+  @media(max-width: $xxl){
+    padding: 12px 0;
+  
+  }
+  @media(max-width: $lg){
+  
+  }
+  @media(max-width: $md){
+    
+  }
+  @media(max-width: $sm){
+  }
+  @media(max-width: $xs){
+  
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    max-width: 209px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+      max-width: 139px;
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    svg, img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__left-info {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    @media(max-width: $xl){
+    }
+    @media(max-width: $lg){
+      font-size: 14px;
+    
+    }
+    @media(max-width: $md){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media(max-width: $sm){
+      display: none;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &::before {
+      content: '';
+      background: #DBDBDB;
+      height: 28px;
+      width: 2px;
+      border-radius: 2px;
+      display: flex;
+      margin-right: 10px;
+      flex-shrink: 0;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        display: none;
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+  &__left-tel {
+    color: $text;
+    transition: all 0.25s;
+    &:hover {
+      color: $green;
+    }
+  }
+  &__left-work-hours {
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      margin-top: 5px;
+      margin-left: 0;
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    &::before {
+      content: '';
+      background: #DBDBDB;
+      height: 2px;
+      width: 17px;
+      border-radius: 2px;
+      display: flex;
+      margin-right: 6px;
+      flex-shrink: 0;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        display: none;
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &::after {
+      margin-left: 10px;
+      flex-shrink: 0;
+      background-color: $green;
+      content: '';
+      width: 8px;
+      height: 8px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      position: relative;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        top: 2px;
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+  &__nav {
+    display: flex;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $bg-light;
+    }
+    @media(max-width: $xs){
+    
+    }
+    &--mobile {
+      position: relative !important;
+      background-color: transparent;
+      display: none;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: flex;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      .header__nav-button {
+        background-color: $bgIcon;
+        height: 44px;
+        min-width: 44px;
+      }
+    }
+  }
+  &__nav-button {
+    background-color: $bgIcon;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    min-width: 56px;
+    font-size: 18px;
+    margin-left: 10px;
+    color: $text;
+    transition: 0.25s all;
+    
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      flex-direction: column-reverse;
+      font-size: 16px;
+      width: 25%;
+      background-color: transparent;
+    }
+    @media(max-width: $xs){
+    
+    }
+    &.active {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        color: $green !important;
+        svg {
+          path {
+            fill: $green;
+          }
+        }
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+      
+    }
+    &:hover, &.active {
+      @media(min-width: $sm){
+        background-color: $green-dark;
+        color: $light;
+        svg {
+          path {
+            fill: $light;
+          }
+        }
+      }
+      @media(max-width: $sm){
+        color: $text;
+      }
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &--catalog {
+      padding: 0 23px;
+      .header {
+        &__nav-button-text {
+          display: block;
+        }
+      }
+    }
+    &--red {
+      background-color: #FF141C !important;
+    }
+  }
+  &__nav-button-text {
+    margin-right: 12px;
+    display: none;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      display: flex;
+      margin-right: 0;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  &__nav-button-icon {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+    svg {
+      transition: 0.25s all;
+      path {
+        transition: 0.25s all;
+      }
+    }
+  }
+}

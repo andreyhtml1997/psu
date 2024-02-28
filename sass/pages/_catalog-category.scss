@@ -1,0 +1,97 @@
+.catalog-category {
+  &__el {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: $light;
+    min-height: 300px;
+    border-radius: 25px;
+    transition: all 0.25s;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+      min-height: 250px;
+    }
+    @media(max-width: $xs){
+      min-height: 200px;
+      padding: 20px;
+    }
+    
+    &:hover {
+      background-color: $green;
+      box-shadow: $box-shadow;
+      color: $text;
+      .catalog-category__el-quantity {
+        color: $light;
+      }
+    }
+  }
+  &__el-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    height: auto;
+    max-width: 55%;
+    width: 100%;
+    object-fit: contain;
+    object-position: right bottom;
+  }
+  &__el-title {
+    display: flex;
+    position: relative;
+    max-width: 50%;
+  }
+  &__el-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 50%;
+  }
+  &__el-subtitle {
+
+  }
+  &__el-quantity {
+    color: $green;
+    margin-top: 3px;
+  }
+  &__text {
+    margin-top: 50px;
+    & > * {
+      margin-bottom: 10px;
+      border-radius: 25px;
+      background-color: $light;
+      padding: 30px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+        padding: 20px 0px;
+        background-color: transparent;
+        &:first-of-type {
+          padding-top: 0;
+        }
+      }
+      
+    }
+  }
+}

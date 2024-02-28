@@ -1,0 +1,568 @@
+//= parts/head.html
+//= parts/header.html
+<main class="catalog-page">
+  <div class="breadcrumbs">
+    <nav class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__el">
+          <a href="index.html" class="breadcrumbs__link">Головна</a>
+        </li>
+        <li class="breadcrumbs__el">
+          <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+        </li>
+        <li class="breadcrumbs__el">
+          <a href="catalog-category.html" class="breadcrumbs__link">Діагностичне обладнання</a>
+        </li>
+        <li class="breadcrumbs__el">
+          <a href="catalog-with-filter.html" class="breadcrumbs__link">МРТ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section class="section catalog">
+    <div class="container container--wide">
+      <div class="section__header">
+        <h2 class="section__title">МРТ</h2>
+      </div>
+      <div class="section__body">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <div class="catalog-filter-container">
+              <nav class="catalog-filter">
+                <div class="modal fade" id="filter_equipment" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                <div class="equipment-catalog">
+                  <div class="section__header">
+                    <h2 class="section__title">Тип обладнання</h2>
+                  </div>
+                  <div class="accordion" id="catalog_accordion">
+                    <div class="equipment__el">
+                      <div class="equipment__el-title equipment__el-title--big">
+                        <a href="catalog-category.html" class="equipment__el-title-value">Діагностичне <br>обладнання</a>
+                        <button 
+                          aria-expanded="false"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#equipment1"
+                          class="equipment__el-title-toggle"
+                        ></button>
+                      </div>
+                      <div 
+                        id="equipment1" 
+                        class="accordion-collapse collapse" 
+                        data-bs-parent="#catalog_accordion"
+                      >
+                        <nav class="equipment__el-subcategories">
+                          <a href="catalog-with-filter.html">Мамографи</a>
+                          <a href="catalog-with-filter.html">Ангиографи</a>
+                          <a class="active" href="catalog-with-filter.html">Кальпоскопи</a>
+                          <a href="catalog-with-filter.html">С-арки</a>
+                          <a href="catalog-with-filter.html">Ренгени</a>
+                          <a href="catalog-with-filter.html">УЗД</a>
+                          <a href="catalog-with-filter.html">КТ</a>
+                          <a href="catalog-with-filter.html">МРТ</a>
+                          <a href="catalog-with-filter.html">Датчики для УЗД</a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="equipment__el">
+                      <div class="equipment__el-title equipment__el-title--big">
+                        <a href="catalog-category.html" class="equipment__el-title-value">Стоматологія <br>та витратні матеріали</a>
+                        <button 
+                          aria-expanded="false"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#equipment2"
+                          class="equipment__el-title-toggle"
+                        ></button>
+                      </div>
+                      <div 
+                        id="equipment2" 
+                        class="accordion-collapse collapse" 
+                        data-bs-parent="#catalog_accordion"
+                      >
+                        <nav class="equipment__el-subcategories">
+                          <a href="catalog-with-filter.html">Стоматологія</a>
+                          <a href="catalog-with-filter.html">Витратні матеріали</a>
+                          <a href="catalog-with-filter.html">Термопластичний матеріал Орфіт</a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="equipment__el">
+                      <div class="equipment__el-title equipment__el-title--big">
+                        <a href="catalog-category.html" class="equipment__el-title-value">Реанімаційне <br>обладнання</a>
+                        <button 
+                          aria-expanded="false"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#equipment3"
+                          class="equipment__el-title-toggle"
+                        ></button>
+                      </div>
+                      <div 
+                        id="equipment3" 
+                        class="accordion-collapse collapse" 
+                        data-bs-parent="#catalog_accordion"
+                      >
+                        <nav class="equipment__el-subcategories">
+                          <a href="catalog-with-filter.html">НДА</a>
+                          <a href="catalog-with-filter.html">ЕКГ</a>
+                          <a href="catalog-with-filter.html">ВЛ</a>
+                          <a href="catalog-with-filter.html">Неонатологія</a>
+                          <a href="catalog-with-filter.html">Монітори пацієнта</a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="equipment__el">
+                      <div class="equipment__el-title equipment__el-title--big">
+                        <a href="catalog-category.html" class="equipment__el-title-value">Ядерна <br>Медицина</a>
+                        <button 
+                          aria-expanded="false"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#equipment4"
+                          class="equipment__el-title-toggle"
+                        ></button>
+                      </div>
+                      <div 
+                        id="equipment4" 
+                        class="accordion-collapse collapse" 
+                        data-bs-parent="#catalog_accordion"
+                      >
+                        <nav class="equipment__el-subcategories">
+                          <a href="catalog-with-filter.html">Лінійні прискорювачі</a>
+                          <a href="catalog-with-filter.html">Циклотрони</a>
+                          <a href="catalog-with-filter.html">Молекулярна візуалізація</a>
+                          <a href="catalog-with-filter.html">Брахітерапія</a>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="equipment__el">
+                      <div class="equipment__el-title equipment__el-title--big">
+                        <a href="catalog-category.html" class="equipment__el-title-value">Медичні меблі <br>та світло</a>
+                        <button 
+                          aria-expanded="false"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#equipment5"
+                          class="equipment__el-title-toggle"
+                        ></button>
+                      </div>
+                      <div 
+                        id="equipment5" 
+                        class="accordion-collapse collapse" 
+                        data-bs-parent="#catalog_accordion"
+                      >
+                        <nav class="equipment__el-subcategories">
+                          <a href="catalog-with-filter.html">Медичні меблі</a>
+                          <a href="catalog-with-filter.html">Медичне світло</a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__footer-nav">
+                  <button type="button" data-bs-dismiss="modal">Скинути</button>
+                  <button type="button" data-bs-dismiss="modal">Закрити</button>
+                </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="filter_med_direction" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                <div class="med-direction med-direction--list-part">
+                  <div class="section__header">
+                    <h2 class="section__title">Напрям медицини</h2>
+                  </div>
+                  <div class="section__body">
+                    <a href="catalog-with-filter.html" class="med-direction__el active">
+                      <span class="med-direction__el-title">Акушерство та гінекологія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Кардіологія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Онкологія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Флебологія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Судинна хірургія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Неврологія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Ветеринарія</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Органи черевної порожнини</span>
+                    </a>
+                    <a href="catalog-with-filter.html" class="med-direction__el">
+                      <span class="med-direction__el-title">Анестезіологія</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal__footer-nav">
+                  <button type="button" data-bs-dismiss="modal">Скинути</button>
+                  <button type="button" data-bs-dismiss="modal">Закрити</button>
+                </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9">
+            <div class="row row--collection">
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <span>Акція</span>
+                    <span>ще 7 днів</span>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <h6>Cпеціальна пропозиція</h6>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <b>Топ!</b>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <strong>Новинка</strong>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <strong>Новинка</strong>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <h6>Cпеціальна пропозиція</h6>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <b>Топ!</b>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <strong>Новинка</strong>
+                  </div>
+                  <a href="product.html" class="product-card__img-container">
+                    <img src="img/showroom-product.png" alt="image">
+                  </a>
+                  <div class="product-card__body">
+                    <div class="product-card__price">$100 000</div>
+                    <div class="product-card__name"><a href="product.html">Revolution Maxima</a></div>
+                    <div class="product-card__model">LA332/LA332E</div>
+                    <div class="product-card__manufacturer">General Electric (США)</div>
+                    <div class="product-card__nav">
+                      <label class="product-card__nav-el product-card__nav-el--add-to-cart"><input type="checkbox"><span></span></label>
+                      <label class="product-card__nav-el product-card__nav-el--like">
+                        <input type="checkbox"><span></span>
+                      </label>
+                      <label class="product-card__nav-el product-card__nav-el--compare">
+                        <input type="checkbox"><span></span>
+                      </label>
+                    </div>
+                    <div class="product-card__footer">
+                      <a href="product.html" class="button button--border-radius-small button--green-dark">Швидкий запит</a>
+                      <a href="product.html" class="button button--border-radius-small button--green">Детальніше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="button button--border-radius-small button--stroke-square show-more-button w-100 mt-md-5 mt-4">
+              Завантажити ще <b>9 товарів</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog__mobile-nav">
+      <button type="button" data-bs-toggle="modal" data-bs-target="#filter_equipment">Тип обладнання</button>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#filter_med_direction">Напрям медицини</button>
+    </div>
+  </section>
+
+
+  <section class="section our-features our-features--small">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Вибравши нас, <br> ви отримаєте...</h2>
+      </div>
+      <div class="section__body">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="our-features__el our-features__el--light">
+              <img src="img/catalog-features/1.jpg" alt="#" class="our-features__el-bg-img">
+              <div class="our-features__el-header">
+                <div class="our-features__el-number">01.</div>
+                <h4 class="our-features__el-title">Швидку доставку</h4>
+              </div>
+              <div class="our-features__el-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="our-features__el">
+              
+              <div class="our-features__el-header">
+                <div class="our-features__el-number">02.</div>
+                <h4 class="our-features__el-title">Встановлення <br>та налаштування</h4>
+              </div>
+              <div class="our-features__el-body">
+                <ul class="our-features__chat our-features__chat--small our-features__chat--full-width">
+                  <li class="our-features__chat-el our-features__chat-el--visitor">
+                    <div class="our-features__chat-el-avatar"><img src="img/doctor.jpg" alt="visitor"></div>
+                    <p class="our-features__chat-el-text">Доброго дня! Є питання
+                      стосовно встановлення УЗД.</p>
+                  </li>
+                  <li class="our-features__chat-el our-features__chat-el--admin">
+                    <div class="our-features__chat-el-avatar">
+                      
+                    </div>
+                    <p class="our-features__chat-el-text">Доброго! Ми можемо допомогти Вам
+                      зі встановленням та налаштуванням.</p>
+                  </li>
+                  <li class="our-features__chat-el our-features__chat-el--visitor">
+                    <div class="our-features__chat-el-avatar"><img src="img/doctor.jpg" alt="visitor"></div>
+                    <p class="our-features__chat-el-text">Буду вдячний!</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="our-features__el our-features__el--light">
+              <img src="img/catalog-features/3.jpg" alt="#" class="our-features__el-bg-img">
+              <div class="our-features__el-header">
+                <div class="our-features__el-number">03.</div>
+                <h4 class="our-features__el-title">Розтермінування <br>до 29-ти місяців</h4>
+              </div>
+              <div class="our-features__el-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="our-features__el">
+              <img src="img/catalog-features/4.jpg" alt="#" class="our-features__el-bg-img">
+              <div class="our-features__el-header">
+                <div class="our-features__el-number">04.</div>
+                <h4 class="our-features__el-title">Офіційну гарантію <br>на 12 місяців</h4>
+              </div>
+              <div class="our-features__el-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="our-features__el our-features__el--light">
+              <img src="img/catalog-features/5.jpg" alt="#" class="our-features__el-bg-img">
+              <div class="our-features__el-header">
+                <div class="our-features__el-number">05.</div>
+                <h4 class="our-features__el-title">Сервісне <br>обслуговування</h4>
+              </div>
+              <div class="our-features__el-body">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section seo-text">
+    <div class="container">
+      <p>Купити УЗД апарат Versana Active від GE в офіційного дистриб'ютора. Protech Solutions Ukraine - це надійність та доступні умови.
+        Офіційний ремонт УЗД апарату передбачає наявність запчастин на складі, офіційна гарантія передбачає наявність підмінного фонду УЗД апаратів на час проведення гарантійного ремонту УЗД. Професійний сервіс — це власний штат сервісних інженерів, які готові надати сервісну підтримку клієнту, навіть віддалено. Protech Solutions надає розтермінування платежу на придбання УЗД апарату, терміном до 29 місяців. Це дає можливість купити новий УЗД апарат або розширити парк наявного медичного обладнання для розвитку для вашого медичного бізнесу.Купити УЗД апарат Versana Active від GE в офіційного дистриб'ютора. Protech Solutions Ukraine - це надійність та доступні умови Офіційний ремонт УЗД апарату передбачає наявність запчастин на складі, офіційна гарантія передбачає наявність підмінного фонду УЗД апаратів на час проведення гарантійного ремонту УЗД. Професійний сервіс — це власний штат сервісних інженерів, які готові надати сервісну підтримку клієнту, навіть віддалено. Protech Solutions надає розтермінування платежу на придбання УЗД апарату, терміном до 29 місяців. Це дає можливість купити новий УЗД апарат або розширити парк наявного медичного обладнання для розвитку для вашого медичного бізнесу.
+        
+        </p>
+    </div>
+  </section>
+</main>
+//= parts/footer.html

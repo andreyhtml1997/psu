@@ -1,0 +1,46 @@
+$xxl: 1599px;
+$xl: 1399px;
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$xs: 575px;
+// colors
+$text: #021A07;
+$secondary: #9DA6A1;
+$third: #9AA39E;
+$green: #00D78A;
+$green-bright: #4EFF97;
+$green-dark: #0C3A3B;
+$light: #ffffff;
+$border-color: #DFDFE2;
+$border-color-dark: #ABB2AF;
+$bgIcon: #E9E9E9;
+$red: #FF0000;
+$bg-light: #F3F3F3;
+$arrow-color: #626263;
+// fonts
+$mainFont: 'Inter', sans-serif;
+$secondaryFont: 'Playfair Display', sans-serif;
+//
+
+$box-shadow: 0px 0px 50px 3px rgba(0,0,0,0.07);
+$box-shadow-down: 0px 30px 30px 3px rgba(0,0,0,0.07);
+$box-shadow-small: 0px 0px 20px 3px rgba(0,0,0,0.03);
+
+
+.text-green, b {
+  color: $green;
+  font-weight: 500;
+  transition: 0.25s all;
+}
+.text-dark, strong {
+  color: $text;
+}
+.text-grey {
+  color: $secondary;
+}
+.text-small-width {
+  max-width: 500px;
+}
+
+

@@ -1,0 +1,99 @@
+@use 'inc' as *;
+
+html {
+	// overflow-x: hidden;
+	min-height: 100vh;
+	background-color: $bg-light;
+}
+body {
+	min-height: 100vh;
+	background-color: $bg-light;
+	color: $text;
+	font-family: $mainFont;
+	font-style: normal;
+	// width: 100vw;
+	font-size: 20px;
+  font-weight: 500;
+	overflow-x: hidden;
+	line-height: 1.25;
+	@media(max-width: $lg) {
+		font-size: 18px;
+	}
+	&.overflow-hidden {
+		overflow: hidden;
+	}
+}
+
+main {
+	padding-top: 240px;
+	position: relative;
+	min-height: 100%;
+	@media(max-width: $xxl){
+		padding-top: 180px;
+	}
+	@media(max-width: $xl){
+	
+	}
+	@media(max-width: $lg){
+		padding-top: 140px;
+	}
+	@media(max-width: $md){
+	}
+	@media(max-width: $sm){
+		padding-top: 95px;
+	
+	}
+	@media(max-width: $xs){
+	
+	}
+	
+}
+.container {
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	// display: flex;
+	// align-items: flex-start;
+  // flex-wrap: wrap;
+	// justify-content: flex-start;
+	&--wide {
+		max-width: 1550px !important;
+	}
+	&--small {
+		max-width: calc(980px + 2rem) !important;
+		.section {
+			&__header {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+
+
+//components
+@import 'components';
+
+//blocks
+//@import 'blocks/preloader';
+
+
+//header & common
+@import 'parts/header';
+@import 'parts/layout';
+
+//pages
+@import 'pages/page';
+@import "pages/home";
+@import "pages/terms";
+@import "pages/about-us";
+@import "pages/catalog";
+@import "pages/catalog-category";
+@import "pages/product";
+
+//footer
+@import 'parts/footer';
+
+
+

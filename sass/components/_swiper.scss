@@ -1,0 +1,55 @@
+.swiper {
+  &__nav {
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+    
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+      display: none !important;
+    }
+    
+  }
+  &--nav-top-right  {
+    overflow: visible;
+    .swiper {
+      &__nav {
+        position: absolute;
+        top: -100px;
+        right: 0;
+        display: flex;
+        @media(max-width: $xl){
+        
+        }
+        @media(max-width: $lg){
+        
+        }
+        @media(max-width: $md){
+          top: -60px;
+        }
+        @media(max-width: $sm){
+        
+        }
+        @media(max-width: $xs){
+        
+        }
+        
+      }
+      &__nav-el {
+        &--prev {
+          margin-right: 12px;
+        }
+        &--next {
+
+        }
+      }
+    }
+  }
+}

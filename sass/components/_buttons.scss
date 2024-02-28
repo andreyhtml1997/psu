@@ -1,0 +1,151 @@
+.button {
+  min-height: 60px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 33px;
+  padding: 19px 25px;
+  font-size: 18px;
+  position: relative;
+  //white-space: nowrap;
+  color: $text;
+  transition: 0.25s all;
+  text-align: center;
+  &--dark {
+    background-color: $green-dark;
+    color: $light;
+    &:hover {
+      background-color: $green;
+    }
+  }
+  &--link {
+    color: $text;
+    display: flex;
+    &:hover {
+      color: $green;
+      svg {
+        path {
+          fill: $green;
+        }
+      }
+    }
+  }
+  &__text {
+    
+  }
+  &__radio-arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: $light;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 14px;
+    svg {
+      width: 12px;
+      height: 30px;
+      object-fit: contain;
+      margin-left: 0 !important;
+    }
+  }
+  svg, &__icon {
+    margin-left: 14px;
+    transition: 0.25s all;
+    path {
+      transition: 0.25s all;
+    }
+  }
+  &--green {
+    display: flex;
+    align-items: center;
+    background-color: $green;
+    font-size: 20px;
+    color: $text;
+    &:hover {
+      background-color: $green-dark;
+      color: $light;
+    }
+  }
+  &--green-dark {
+    background-color: $green-dark;
+    color: $green;
+    &:hover {
+      background-color: $green;
+      color: $text;
+    }
+  }
+  &--stroke-square {
+    border-radius: 12px;
+    border: 1px solid $border-color-dark;
+    &:hover {
+      background-color: $green-dark;
+      color: $light;
+      border-color: $green-dark;
+    }
+  }
+  &--border-radius-small {
+    border-radius: 12px;
+  }
+}
+
+
+
+
+.swiper__nav-el {
+  transition: 0.25s all;
+  width: 45px;
+  height: 45px;
+  border-radius: 42px;
+  background-color: $light;
+  box-shadow: $box-shadow-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  &::after {
+    transition: 0.25s all;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 3px solid $arrow-color;
+    border-top: none;
+    border-left: none;
+    display: flex;
+    position: relative;
+  }
+
+  &--prev {
+    left: 0;
+
+    &::after {
+      transform: rotate(135deg);
+      left: 4px;
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    &::after {
+      transform: rotate(-45deg);
+      right: 3px;
+    }
+  }
+
+  &:hover {
+    background-color: $green;
+
+    &::after {
+      border-color: $light;
+    }
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0;
+    cursor: default;
+  }
+}
